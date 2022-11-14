@@ -1,11 +1,7 @@
-import React from 'react'
-
-type Props = {}
-
-const Books = (props: Props) => {
+const Books = () => {
   return (
     <div>Books</div>
   )
 }
 
-export default Books
+export default Books;
