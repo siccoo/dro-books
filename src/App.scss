@@ -1,11 +1,9 @@
 .app {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   &__header {
     background: darkslategray;
     color: #ffffff;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 
