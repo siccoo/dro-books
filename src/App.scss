@@ -1,7 +1,7 @@
 .app {
 
   &__header {
-    background: darkslategray;
+    background: #2f4f4f;
     color: #ffffff;
     padding: 20px;
     display: flex;
@@ -24,8 +24,5 @@
         text-decoration: none;
       }
     }
-  }
-
-  &__routes {
   }
 }
