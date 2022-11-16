@@ -1,6 +1,26 @@
+import { useState } from "react";
+import BookData from "../../types/books";
+import BookService from "../../services/bookservice";
+
 import "../../assets/scss/styles.scss";
 
+
 const Books: React.FC = () => {
+  const [books, setBooks] = useState<Array<BookData>>([]);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+
+  const retrieveBooks = () => {
+    BookService.getBooks()
+      .then(res => {
+        setBooks(res.data as BookData[])
+        console.log(res.data);
+
+      }).catch(err => {
+        console.log(err);
+
+      })
+  }
   return (
     <div>
       {/* <!-- Search Area --> */}
@@ -25,13 +45,15 @@ const Books: React.FC = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Bantam Books</td>
-            <td>A Game of Thrones</td>
-            <td>978-0553103540</td>
-            <td>George R. R. Martin</td>
-            <td>1996-08-01T00:00:00</td>
-          </tr>
+          {books && books.map(data => (
+            <tr>
+              <td>{data.publisher}</td>
+              <td>{data.name}</td>
+              <td>{data.isbn}</td>
+              <td>{data.authors}</td>
+              <td>{data.released}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
