@@ -1,6 +1,6 @@
 import http from "../utils/http-common";
 
-const getBooks =() => {
+const getBooks = () => {
     return http.get("/books");
 }
 
