@@ -19,26 +19,25 @@ const Books: React.FC = () => {
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const searchQuery = e.target.value;
     console.log(searchQuery);
-    
     setSearchQuery(searchQuery);
   }
 
   const retrieveBooks = () => {
     BookService.getBooks()
-      .then((res: { data: BookData[]; }) => {
+      .then(res => {
         setBooks(res.data as BookData[])
         // console.log(res.data);
-      }).catch((err: any) => {
+      }).catch(err => {
         console.log(err);
       })
   }
 
   const retrieveCharacters = () => {
     CharacterService.getCharacters()
-      .then((res: { data: CharacterData[]; }) => {
+      .then(res => {
         setCharacters(res.data as CharacterData[])
         // console.log(res.data);
-      }).catch((err: any) => {
+      }).catch(err => {
         console.log(err);
       })
   }
