@@ -6,3 +6,7 @@ export default axios.create({
     "Content-type": "application/json"
   }
 });
+
+export function mockResolvedValue(arg0: { results: { name: string; }[]; }) {
+    throw new Error("Function not implemented.");
+}
