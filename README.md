@@ -1,6 +1,6 @@
 # DRO Health Frontend Engineer Home Task
 
-## Front Technologies Used
+#### Front Technologies Used
 - React
 - TypeScript
 - Axios
@@ -18,16 +18,16 @@ git clone https://github.com/siccoo/dro-books
 cd dro-books
 ```
 
-### Running:
+#### Running:
 
-### `yarn start` or `npm start`
+##### `yarn start` or `npm start`
 
 This runs the app and can be visited at [http://localhost:3000](http://localhost:3000) on your browser.
 
 
-## Directory structure
+#### Directory structure
 
-### Overview
+#### Overview
 
 ```tree
 ├─ public/
@@ -59,7 +59,7 @@ This runs the app and can be visited at [http://localhost:3000](http://localhost
 └─ README.md
 ```
 
-## Run Tests
+#### Run Tests
 There's test case for Books components, then the customer page also have unit test
 
 ```shell
@@ -70,9 +70,9 @@ or
 # Run all tests
 $ yarn test
 ```
-## Issues faced
+#### Issues faced
 
 I faced complicated challenge in writing the test cases and I didn't perform basic search operation and the infinite loading.
 
-## Feedback
+#### Feedback
 If I had more time, I would have built basic search operation, as well as more test cases
