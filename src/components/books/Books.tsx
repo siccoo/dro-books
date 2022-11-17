@@ -25,20 +25,20 @@ const Books: React.FC = () => {
 
   const retrieveBooks = () => {
     BookService.getBooks()
-      .then(res => {
+      .then((res: { data: BookData[]; }) => {
         setBooks(res.data as BookData[])
         // console.log(res.data);
-      }).catch(err => {
+      }).catch((err: any) => {
         console.log(err);
       })
   }
 
   const retrieveCharacters = () => {
     CharacterService.getCharacters()
-      .then(res => {
+      .then((res: { data: CharacterData[]; }) => {
         setCharacters(res.data as CharacterData[])
         // console.log(res.data);
-      }).catch(err => {
+      }).catch((err: any) => {
         console.log(err);
       })
   }
