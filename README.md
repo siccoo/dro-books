@@ -33,6 +33,9 @@ This runs the app and can be visited at [http://localhost:3000](http://localhost
 ├─ public/
 │  ├─ index.html
 ├─ src/
+|  ├─ assets/
+|  |  ├─scss
+|  |  |  ├─styles.scss
 |  ├─ components/
 |  |  ├─Books
 |  |  ├─Loading
@@ -46,9 +49,6 @@ This runs the app and can be visited at [http://localhost:3000](http://localhost
 |  |  ├─store.js
 │  ├─ utils/
 |  |  ├─ http-common.js
-│  ├─ pages/
-|  |  ├─ HomePage
-|  |  |  ├─ index.js
 │  ├─ index.tsx
 │  ├─ App.tsx
 │  ├─ App.scss
